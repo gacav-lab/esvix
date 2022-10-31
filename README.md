@@ -1,4 +1,4 @@
-# Esvix - [Esv]aziar L[ix]eira
+# Esvix - {Esv}aziar L{ix}eira
 
 Script para automação de limpeza da lixeira do computador.
 
