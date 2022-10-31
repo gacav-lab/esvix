@@ -1,2 +1,3 @@
-# esvix
-Script para automação de limpeza de lixeira
+# Esvix
+
+Script para automação de limpeza de lixeira do computador.
