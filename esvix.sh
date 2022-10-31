@@ -7,7 +7,6 @@ items=
 message=
 zenity_exists=
 readonly FAILURE=1
-readonly TITLE="Esvix"
 readonly TRASH_PATH="$HOME"/.local/share/Trash/files
 
 check_ui() {
@@ -15,6 +14,8 @@ check_ui() {
 }
 
 display_message() {
+	local readonly TITLE='Esvix'
+
 	if [ "$ui" = 'cli' ]; then
 		echo $2
 	else
@@ -41,9 +42,9 @@ items=`ls "$TRASH_PATH" | wc -l`
 if [ $items -gt 0 ]; then
 	rm -rf "$TRASH_PATH"/*
 
-	message="Itens removidos da lixeira!"
+	message='Empty trash can!'
 	display_message 'info' "$message"
 else
-	message="Sem itens na lixeira!"
+	message='The trash is already empty!'
 	display_message 'error' "$message"
 fi
